@@ -87,7 +87,7 @@ export default function Portfolio() {
           <h2>PAUGAM Lucas</h2>
           <p>
             Passionné par le développement web et les nouvelles technologies, je
-            suis spécialisé en Developpement backend et j'aime créer des expériences interactives.
+            suis spécialisé en Développement backend et j'aime créer des expériences interactives.
           </p>
         </div>
       </section>
@@ -243,7 +243,7 @@ export default function Portfolio() {
           <FaEnvelope className="icon" /> Email
         </a>
         <a href="tel:+33782546412" className="contact-item">
-          <FaPhone className="icon" /> Téléphone
+          <FaPhone className="icon" /> +33782546412
         </a>
         <a href="https://www.linkedin.com/in/lucas-paugam-8915712a1/" target="_blank" rel="noopener noreferrer" className="contact-item">
           <FaLinkedin className="icon" /> LinkedIn
