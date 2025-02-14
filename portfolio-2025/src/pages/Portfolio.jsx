@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef  } from "react";
 import Card from "../components/ui/card";
 import ExperienceCard from "../components/ui/ExperienceCard";
 import ProjectLayout from "../components/ui/ProjectLayout";
-import Button from "../components/ui/button";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 
 export default function Portfolio() {
@@ -204,6 +204,22 @@ export default function Portfolio() {
       </section>
       {/* {sections.map((section) => (
       ))} */}
+
+      {/* Section Contact */}
+      <section className="section">
+        <h1>Me contacter</h1>
+        <div className="contact-links">
+        <a href="mailto:lucas.paugam@gmail.com" className="contact-item">
+          <FaEnvelope className="icon" /> Email
+        </a>
+        <a href="https://www.linkedin.com/in/lucas-paugam-8915712a1/" target="_blank" rel="noopener noreferrer" className="contact-item">
+          <FaLinkedin className="icon" /> LinkedIn
+        </a>
+        <a href="https://github.com/Pogamos" target="_blank" rel="noopener noreferrer" className="contact-item">
+          <FaGithub className="icon" /> GitHub
+        </a>
+      </div>
+      </section>
     </div>
   );
 }

@@ -111,6 +111,35 @@ p {
   scroll-snap-align: start;
 }
 
+.contact-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-item:hover {
+  color: #0073b1;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
 
 
 /* .section:nth-child(even) {
