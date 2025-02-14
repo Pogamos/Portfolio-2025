@@ -3,7 +3,7 @@ import Card from "../components/ui/card";
 import ExperienceCard from "../components/ui/ExperienceCard";
 import ProjectLayout from "../components/ui/ProjectLayout";
 import Button from "../components/ui/button";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 
 export default function Portfolio() {
@@ -136,7 +136,7 @@ export default function Portfolio() {
         <h1>Mes Créations</h1>
         <div className="cards">
           {sections.map((section) => (
-            <motion.div
+            <div
               key={section.id}
               className="card-container"
               initial={{ opacity: 0, y: 20 }}
@@ -150,7 +150,7 @@ export default function Portfolio() {
                 languages={section.languages}
                 onClick={() => scrollToSection(section.ref)}
               />
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
