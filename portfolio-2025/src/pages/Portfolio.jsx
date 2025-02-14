@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef  } from "react";
 import Card from "../components/ui/card";
 import ExperienceCard from "../components/ui/ExperienceCard";
 import ProjectLayout from "../components/ui/ProjectLayout";
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub, FaPhone } from "react-icons/fa";
 
 
 export default function Portfolio() {
@@ -129,6 +129,36 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* <section className="section">
+      <h2>Compétences Techniques</h2>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div>
+        <h3>Langages de programmation</h3>
+        <div className="icons">
+          <i className="devicon-python-plain colored"></i>
+          <i className="devicon-javascript-plain colored"></i>
+          <i className="devicon-cplusplus-plain colored"></i>
+        </div>
+      </div>
+
+      <div>
+        <h3>Frameworks & Bibliothèques</h3>
+        <div className="icons">
+          <i className="devicon-react-original colored"></i>
+          <i className="devicon-laravel-plain colored"></i>
+        </div>
+      </div>
+
+      <div>
+        <h3>Outils & Technologies</h3>
+        <div className="icons">
+          <i className="devicon-git-plain colored"></i>
+          <i className="devicon-docker-plain colored"></i>
+        </div>
+      </div>
+      </section> */}
 
       {/* Section Sommaire avec Cartes */}
       <section className="section">
@@ -211,6 +241,9 @@ export default function Portfolio() {
         <div className="contact-links">
         <a href="mailto:lucas.paugam@gmail.com" className="contact-item">
           <FaEnvelope className="icon" /> Email
+        </a>
+        <a href="tel:+33782546412" className="contact-item">
+          <FaPhone className="icon" /> Téléphone
         </a>
         <a href="https://www.linkedin.com/in/lucas-paugam-8915712a1/" target="_blank" rel="noopener noreferrer" className="contact-item">
           <FaLinkedin className="icon" /> LinkedIn
