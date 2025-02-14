@@ -1,0 +1,88 @@
+/* Global */
+.about-me {
+    display: flex;
+    justify-content: center; /* Centrer globalement la section */
+    padding: 40px;
+  }
+  
+  .about-me-container {
+    display: flex;
+    justify-content: flex-start; /* Positionne les éléments au début de l'espace disponible */
+    width: 100%;
+    max-width: 1600px; /* Largeur maximale de la section */
+  }
+  
+  .about-me-left {
+    flex-grow: 1; /* Prend tout l'espace restant */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .about-me-right {
+    width: 500px; /* Largeur fixe pour la carte de profil */
+    margin-left: 20px; /* Ajoute un petit espace entre la partie gauche et droite */
+  }
+  
+  /* Carte de profil */
+  .profile-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .profile-card img {
+    width: 100%;
+    max-width: 325px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+  }
+
+  .profile-card img:active {
+    transform: scale(0.95); /* Effet au clic : légèrement réduit */
+  }
+  
+  .profile-card img.clicked {
+    animation: spin-animation 1s ease-in-out, glow-animation 1s forwards;
+  }
+  
+  /* Animation de rotation */
+  @keyframes spin-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Animation de l'effet de brillance */
+  @keyframes glow-animation {
+    0% {
+      filter: brightness(1);
+    }
+    50% {
+      filter: brightness(1.5);
+    }
+    100% {
+      filter: brightness(1);
+    }
+  }
+  
+  .profile-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .profile-card p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
