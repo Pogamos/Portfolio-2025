@@ -3,7 +3,6 @@ import Card from "../components/ui/card";
 import ExperienceCard from "../components/ui/ExperienceCard";
 import ProjectLayout from "../components/ui/ProjectLayout";
 import Button from "../components/ui/button";
-// import { motion } from "framer-motion";
 
 
 export default function Portfolio() {
